@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * _memset - function that fills memory with a constant byte
- *@s: first value
- *@b: second value
- *@n: thirth value
- *
- * Return: char with result of memset
+ * _memset - Entry point
+ *@s: pointed destination
+ *@b: constanstant byte
+ *@n: bytes
+ * Return: Always 0 (Success)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -14,7 +13,6 @@ char *_memset(char *s, char b, unsigned int n)
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
-		n--;
 	}
 	return (s);
 }
